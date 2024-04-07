@@ -1,0 +1,163 @@
+<!-- 
+    1. Thẻ tiêu đề ~ Heading => h
+    2. Đoạn văn ~ Paragraph => 
+    8. Text
+        1. In đậm: b, strong
+        2. In nghiêng: i => italic
+        3. Gạch chân: u => underline
+    3. Bảng biểu ~ Table
+    4. Danh sách ~ List
+        4.1 Danh sách có thứ tự ~ Order List => ol
+        4.2 Dạnh sách không có thứ tự ~ Unorder list => ul
+        
+    5. Hình ảnh ~ Image
+    6. Thành phần liên kết (siêu liên kết) ~ hyperlink ~ anchor
+    7. Video 
+    9. Audio
+
+    10.Form
+        . Text Input
+        . Number Input
+        . File
+        . Color picker
+        . Datetime picker
+    11. The div
+    12. Semantic tag: header, footer,...
+ -->
+
+<!-- Tag -->
+<!-- SEO:  Search Engine Optimization-->
+<!DOCTYPE html>
+<!-- Opening tag: Thẻ mở -->
+<html>
+
+<head>
+    <!-- self-closing tag -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML,MindX, C4E">
+    <meta name="description" content="Trang web HTMl cơ bản">
+    <title>Bài học 02: HTMl</title>
+</head>
+
+<body>
+    <!-- Thẻ tiêu đề: h1 -> h6 -->
+    <!-- Thẻ block -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+
+    <!-- Thẻ đoạn văn -->
+    <!-- Thẻ block -->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, dolor.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt sed qui officiis rerum aut modi voluptatum
+        distinctio ea perspiciatis nesciunt.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <!-- Thẻ inline -->
+    <span>Thẻ span 1</span>
+    <span>Thẻ span 2</span>
+    <span>Thẻ span 3</span>
+    <span>Thẻ span 4</span>
+    <span>Thẻ span 5</span>
+    <span>Thẻ span 6</span>
+    <span>Thẻ span 7</span>
+
+    <p>Bài học <strong><i>HTML</i></strong> <span>rất hay</span></p>
+    <p>Bài học HTML <i>rất hay</i></p>
+    <p><u>Bài học</u> <b>CSS</b> rất hay</p>
+
+    <h1>H<sub>2</sub>0</h1>
+    <h2>(a+b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup></h2>
+
+    <h4>Liệt kê các môn học tại Đại học</h4>
+    <ul>
+        <li>Pháp luật đại cương</li>
+        <li>Giải tích 1</li>
+        <li>Đại số tuyến tính</li>
+        <li>Triết học Mác Lê Nin</li>
+        <li>Đường lối</li>
+        <li>Tư tưởng Hồ Chí Minh</li>
+        <li>Cấu trúc dữ liệu và giải thuật</li>
+        <li>Nguyên lý kế toán</li>
+    </ul>
+
+    <h4>Danh sách việc làm trong 1 ngày</h4>
+    <br>
+    <br>
+    <br>
+    <ol>
+        <li>Đánh răng</li>
+        <li>Đi học</li>
+        <li>
+            Đi chơi
+            <ul>
+                <li>Đánh bida</li>
+                <li>Đánh <i><b>Liên Minh</b></i></li>
+                <li>Đá bóng</li>
+            </ul>
+        </li>
+        <li>Được Code</li>
+        <li>Đi ngủ</li>
+    </ol>
+
+    <!-- Bảng biểu table -->
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Địa chỉ</th>
+                <th>Số điện thoại</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Nguyễn Văn A</td>
+                <td>Hồ Chí Minh</td>
+                <td>12312412</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nguyễn Văn B</td>
+                <td>Hà Nội</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nguyễn Văn B</td>
+                <td>Hà Nội</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nguyễn Văn B</td>
+                <td>Hà Nội</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nguyễn Văn B</td>
+                <td>Hà Nội</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Thẻ link -->
+    <a href="https://google.com" target="_blank">Đi đến trang Google</a>
+    <a href="tel:+4733378901">+47 333 78 901</a>
+    <a href="mailto:minhhungabc@example.com">Send email</a>
+    <a href="mailto:someone@example.com">Send email</a>
+
+    <!-- Thẻ image: self-closing tag -->
+    <img src="https://fastly.picsum.photos/id/659/200/300.jpg?hmac=cmMJe403Rt0WMoriAFlgDaHI4FkwevCOXFyhnelzolYxắda231"
+        alt="Hinh anh con cun">
+    <br>
+    <hr>
+    <img src="./images/avatar.webp" width="200" height="200">
+    <audio src="./audios/test-audio.mp3" controls></audio>
+</body>
+
+</html>
+<!-- Closing tag (thẻ đóng), html => tagname -->

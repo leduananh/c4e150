@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+
+    <!-- attributes -->
+    <form>
+        <div>
+            <label for="fullname">Fullname</label>
+            <input type="text" id="fullname" />
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" />
+        </div>
+
+        <div>
+            <label for="confirm-password">Confirm password</label>
+            <input type="password" name="confirm-password" />
+        </div>
+
+        <div>
+            <h6>Account type</h6>
+            <input type="radio" name="account" id="personal">
+            <label for="personal">Personal</label>
+
+            <input type="radio" name="account" id="company">
+            <label for="company">Company</label>
+
+            <input type="radio" name="account" id="group">
+            <label for="group">Group</label>
+
+            <input type="radio" name="account" id="other">
+            <label for="other">Others</label>
+
+        </div>
+        <textarea cols="30" rows="10"></textarea>
+        <button>Create an account</button>
+    </form>
+</body>
+
+</html>

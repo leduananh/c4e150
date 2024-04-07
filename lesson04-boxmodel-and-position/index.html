@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf8">
+    <title>Lesson04 - Box Model & Position</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- 2.CSS - Internal CSS -->
+    <style>
+        /* h1 {
+            font-size: 40px;
+            color: red;
+            text-decoration: underline;
+            font-weight: bold;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <!-- Demo Box Model  -->
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nobis
+    </div>
+
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nobis
+    </div>
+
+    <!-- Header section -->
+    <header>
+        <div>
+            <!-- 1. CSS - Inline CSS -->
+            <!-- <h1 style="font-size: 40px;color: red;text-decoration: underline;font-weight: bold;">Shayna</h1> -->
+            <h1 class="logo">Shayna</h1>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <ul class="nav-list">
+                <li class="active">Home</li>
+                <li>Star</li>
+                <li>Browse</li>
+                <li>Pricing</li>
+                <li>Story</li>
+            </ul>
+        </nav>
+
+        <!-- CTA: Call To Action -->
+        <div>
+            <button>Sign In</button>
+        </div>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section>
+        <div>
+            <h1 class="text-center text-red title">Learn UI Design From The Real Expert</h1>
+            <p>Stop wasting time browsing around and start learning from our designers for your better card@r</p>
+            <button>Get Started</button>
+        </div>
+        <div>
+            <img src="./images/test-img.jpg" width="300">
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section>
+        <h6 class="text-center">Trusted by Global Companies</h6>
+        <div class="partner">
+            <img src="./images/logo-1.png" alt="" class="partner__item">
+            <img src="./images/logo-2.png" alt="" class="partner__item">
+            <img src="./images/logo-3.png" alt="" class="partner__item">
+            <img src="./images/logo-4.png" alt="" class="partner__item">
+            <img src="./images/logo-5.png" alt="" class="partner__item">
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer style="background-color: rgb(101, 101, 142);color: aliceblue;">
+        <p>Author: Hege Refsnes</p>
+        <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+    </footer>
+
+</body>
+
+</html>
+
+<!-- 
+    Có bao nhiêu cách để styling 1 HTML element
+        1. Inline CSS
+        2. Internal CSS
+        3. External CSS
+ -->

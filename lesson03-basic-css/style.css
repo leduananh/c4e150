@@ -1,0 +1,83 @@
+/*External CSS*/
+/* #logo {
+  font-size: 40px;
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
+} */
+
+/* CSS Selector:
+  1. tag name
+  2. id => #
+  3. class => .
+*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 40px;
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.nav-list {
+  /* Layout theo chiều ngang(dọc) */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 52px;
+
+  list-style: none;
+}
+
+/* .nav-list li:first-child {
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+
+.nav-list li:first-child:hover {
+  color: red;
+} */
+
+/* .nav-list li:nth-child(1) {
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+} */
+
+.active {
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+
+.active:hover {
+  color: red;
+}
+
+.partner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.partner__item {
+  height: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-orange {
+  color: orange !important;
+}

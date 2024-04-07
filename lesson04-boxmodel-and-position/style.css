@@ -1,0 +1,114 @@
+/* Demo Box Model */
+
+/* 
+  actual width = width + 2*padding + 2 border
+  actual height = height + 2*padding + 2 border
+
+*/
+.box {
+  background-color: red;
+  color: aliceblue;
+
+  width: 50%;
+  height: 200px;
+
+  /* 
+    border-width: 10px;
+    border-style: solid; 
+    border-color: black;
+  */
+  border: 10px solid black;
+
+  border-radius: 10px;
+
+  /* 
+    - Là khoảng cách từ content đến border 
+    - làm thay đổi chiều rộng và cao thực tế của box
+  */
+  padding: 24px;
+
+  /* 
+    - Là khoảng cách giữa những HTML Element 
+    - KHÔNG làm thay đổi chiều rộng và cao thực tế của box
+  */
+  margin-bottom: 40px;
+  margin-top: 24px;
+}
+
+.box1 {
+  background-color: yellow;
+  border: 5px solid red;
+  width: 75%;
+  padding: 40px;
+}
+
+/* ---------------- */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 40px;
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.nav-list {
+  /* Layout theo chiều ngang(dọc) */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 52px;
+
+  list-style: none;
+}
+
+/* .nav-list li:first-child {
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+
+.nav-list li:first-child:hover {
+  color: red;
+} */
+
+/* .nav-list li:nth-child(1) {
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+} */
+
+.active {
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+
+.active:hover {
+  color: red;
+}
+
+.partner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.partner__item {
+  height: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-red {
+  color: red;
+}
+
+.title {
+  margin-bottom: 30px;
+}
