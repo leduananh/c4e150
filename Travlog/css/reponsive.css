@@ -1,0 +1,9 @@
+/* điều kiện cho màn hình device tablet min 600px -> max 1024px*/
+@media only screen and (min-width: 600px) and (max-width: 1024px) and (min-height: 800px) {
+    /* Thêm các kiểu CSS tương ứng cho tablet */
+}
+
+/* điều kiện cho màn hình device mobile min 600px -> max 1024px*/
+@media only screen and (max-width: 599px) and (max-height: 896px) {
+    /* Thêm các kiểu CSS tương ứng cho thiết bị di động */
+}

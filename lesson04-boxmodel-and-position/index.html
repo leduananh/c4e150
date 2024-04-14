@@ -1,97 +1,99 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf8">
-    <title>Lesson04 - Box Model & Position</title>
-
-    <link rel="stylesheet" href="./style.css">
-
-    <!-- 2.CSS - Internal CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-        /* h1 {
-            font-size: 40px;
-            color: red;
-            text-decoration: underline;
-            font-weight: bold;
-        } */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: hsl(230deg 7.69% 15.29%);
+
+        }
+
+        header ul li {
+            list-style-type: none;
+            padding: 0 10px
+        }
+
+        header nav ul {
+            display: flex;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        .logo {
+            width: 150px;
+            height: 100px;
+        }
+
+        .cta {
+            padding: 10px 30px;
+            background-color: hsl(189.94deg 98.79% 32.35%);
+            border-radius: 50px;
+        }
+
+        .header-btn {
+            display: none;
+            border: 0;
+            padding: 10px;
+        }
+
+        @media screen and (min-width: 100px) and (max-width: 1024px) {
+            /* header nav {
+                display: none;
+            } */
+
+            header a {
+                font-size: 10px;
+            }
+
+            /* .header-btn {
+                    display: inline-block;
+                } */
+        }
     </style>
 </head>
 
 <body>
-
-    <!-- Demo Box Model  -->
-    <div class="box">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nobis
-    </div>
-
-    <div class="box1">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nobis
-    </div>
-
-    <!-- Header section -->
     <header>
-        <div>
-            <!-- 1. CSS - Inline CSS -->
-            <!-- <h1 style="font-size: 40px;color: red;text-decoration: underline;font-weight: bold;">Shayna</h1> -->
-            <h1 class="logo">Shayna</h1>
-        </div>
+        <img class="logo"
+            src="data:image/png;base64,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"
+            alt="">
 
-        <!-- Navigation -->
+        <button class="header-btn">&#9776</button>
+
         <nav>
-            <ul class="nav-list">
-                <li class="active">Home</li>
-                <li>Star</li>
-                <li>Browse</li>
-                <li>Pricing</li>
-                <li>Story</li>
+            <ul>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
             </ul>
         </nav>
-
-        <!-- CTA: Call To Action -->
-        <div>
-            <button>Sign In</button>
-        </div>
+        <a class="cta" href="#">Contact</a>
+        <!-- <button></button> -->
     </header>
 
-    <!-- Hero Banner Section -->
-    <section>
-        <div>
-            <h1 class="text-center text-red title">Learn UI Design From The Real Expert</h1>
-            <p>Stop wasting time browsing around and start learning from our designers for your better card@r</p>
-            <button>Get Started</button>
-        </div>
-        <div>
-            <img src="./images/test-img.jpg" width="300">
-        </div>
-    </section>
-
-    <!-- Partners Section -->
-    <section>
-        <h6 class="text-center">Trusted by Global Companies</h6>
-        <div class="partner">
-            <img src="./images/logo-1.png" alt="" class="partner__item">
-            <img src="./images/logo-2.png" alt="" class="partner__item">
-            <img src="./images/logo-3.png" alt="" class="partner__item">
-            <img src="./images/logo-4.png" alt="" class="partner__item">
-            <img src="./images/logo-5.png" alt="" class="partner__item">
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer style="background-color: rgb(101, 101, 142);color: aliceblue;">
-        <p>Author: Hege Refsnes</p>
-        <p><a href="mailto:hege@example.com">hege@example.com</a></p>
-    </footer>
-
+    <a class="cta" href="#">Contact</a>
 </body>
 
 </html>
-
-<!-- 
-    Có bao nhiêu cách để styling 1 HTML element
-        1. Inline CSS
-        2. Internal CSS
-        3. External CSS
- -->

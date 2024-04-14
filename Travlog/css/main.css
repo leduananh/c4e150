@@ -1,0 +1,21 @@
+/* để các cấu hình rule css mặc định
+
+ như rule chung về font chữ, về cấu hình logo,
+ về style của từng cái nut
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+}
+
+.btn__primary {
+    border-radius: 50px;
+    padding: 50px 60px;
+    background-color: plum;
+}

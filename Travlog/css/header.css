@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header>nav>ul li {
+    list-style-type: none;
+    padding: 0 20px
+}
+
+header>nav>ul {
+    display: flex;
+}
+
+header a {
+    text-decoration: none;
+}
