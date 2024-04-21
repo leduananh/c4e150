@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .aaa {
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="show-data"></h1>
+    <script>
+        // verify data
+        // logic execute
+
+        function tinhDienTich() {
+            let width = prompt("nhap chieu rong: ");
+            let height = prompt("nhap chieu cao: ");
+            // convert data type 
+            // convert từ String type into Number type
+            width = Number(width)
+            height = Number(height)
+            // build-in function
+            if (isNaN(width)) {
+                alert("yêu cầu ấn f5 lại, tại vì width bạn nhập vào không phải là con số")
+                return;
+            }
+
+            if (isNaN(height)) {
+                alert("yêu cầu ấn f5 lại, tại vì height bạn nhập vào không phải là con số")
+                return;
+            }
+            // cast và convert
+
+            // convert data type 
+            // convert từ String type into Number type
+            // d.r.y principles
+
+            const dienTich = width * height
+            let ketQua = 'Với chiều rộng: ' + width + ' và chiều cao là: ' + height + ' thì diện tích là: ' + dienTich;
+            alert(dienTich)
+
+            console.log(ketQua)
+            document.querySelector('#show-data').innerHTML = ketQua
+        }
+        tinhDienTich();
+    </script>
+</body>
+
+</html>
